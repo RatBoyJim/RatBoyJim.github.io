@@ -1,3 +1,8 @@
+header {
+    font-family: 'Hammersmith One', sans-serif;
+    text-align: center;
+}
+
 body {
-    background-color: bisque;
+    background-color: white;
 }
