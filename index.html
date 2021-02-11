@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href='./static/fonts/HammersmithOne-Regular.ttf' rel='stylesheet' type='text/css'>
     <title>Michael Anderson</title>
+    <script src="page.js"></script>
 </head>
 <header>
     <a id="forkme_banner" href="https://github.com/RatBoyJim">View on GitHub</a>
@@ -15,14 +16,19 @@
     <h2>Software Developer</h2>
 </header>
 <body>
-<section>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'defaultOpen')">About Me</button>
+        <button class="tablinks" onclick="openTab(event, 'project_links')">Projects</button>
+        <button class="tablinks" onclick="openTab(event, 'contact')">Contact</button>
+    </div>
+<div id="defaultOpen" class="tabcontent">
     <h4>About Me</h4>
     <p>I am a budding developer with a wealth of experience in providing excellent customer service within a team-based environment in varying roles. I have had a lifelong love of technology going all the way back to being 10 years old and doing some simple programming in Basic.</p>
     <p>This early interest in coding was rekindled when working with HTML during my last employment. Having then been made redundant I decided to put my efforts into forging a career that I will both enjoy and prosper in.</p>
     <p>Now, as a newly trained software developer, I'm excited to combine my past experience with my new skillset to become an effective, enthusiastic and efficient member of Scotland's growing tech sector.</p>
-</section>
-<h4>Please click the links below to view more information on past and current projects.</h4>
-    <div id="project_links">
+</div>
+    <div id="project_links" class="tabcontent">
+        <h4>Please click the links below to view more information on past and current projects.</h4>
         <div id="gs_links">
             <a href="https://ratboyjim.github.io/GoldSoundz/">Gold Soundz</a>
             <a href="https://ratboyjim.github.io/GoldSoundz/"><img src="./static/images/goldSoundzTitle.png" alt="" width=150px height=50px>
@@ -32,5 +38,13 @@
             <a href="https://ratboyjim.github.io/tamagotchi_towers/"><img src="./static/images/TTDino.png" alt="" width=75px height=100px>
         </div>
     </div>
+<div id="contact" class="tabcontent">
+    <div id="contact_links">
+        <p>Email: michael.g.anderson7@gmail.com</p>
+        <a href="https://www.linkedin.com/in/michael-anderson42/">LinkedIn: https://www.linkedin.com/in/michael-anderson42/</a>
+        <br>
+        <a href="https://github.com/RatBoyJim">GitHub: https://github.com/RatBoyJim</a>
+    </div>
+</div>
 </body>
 </html>
