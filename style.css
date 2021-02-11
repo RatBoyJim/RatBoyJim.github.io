@@ -22,3 +22,24 @@ body {
     background-color: white;
     font-family: 'Hammersmith One', sans-serif;
 }
+
+#project_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a:link {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+#gs_links {
+    display: flex;
+    flex-direction: column;
+}
+
+#tt_links {
+    display: flex;
+    flex-direction: column;
+}
