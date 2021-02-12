@@ -72,7 +72,7 @@ a:link {
 }
 
 #contact_descriptions > i {
-    margin-left: 165px;
+    margin-left: 190px;
 }
 
 #contact_links > .gh_img {
@@ -80,9 +80,9 @@ a:link {
     margin-left: 0px;
 }
 
-#gh_description {
+/* #gh_description {
     margin-left: 200px;
-}
+} */
 
 
 * {box-sizing: border-box}
