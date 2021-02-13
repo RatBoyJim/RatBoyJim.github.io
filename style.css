@@ -1,6 +1,7 @@
 header {
     font-family: 'Rubik', sans-serif;
     text-align: center;
+    margin: none;
 }
 
 #forkme_banner {
@@ -21,6 +22,7 @@ header {
 body {
     background-color: white;
     font-family: 'Rubik', sans-serif;
+    margin: 0;
 }
 
 #project_links {
@@ -42,7 +44,7 @@ a:link {
 #gs_links {
     display: flex;
     flex-direction: column;
-    margin-right: 70px;
+    /* margin-right: 70px; */
 }
 
 #tt_links {
@@ -54,14 +56,13 @@ a:link {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-right: 50px;
+    /* margin-right: 20px; */
 }
 
 #contact_links > a  {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-right: 50px;
     margin-left: 150px;
     margin-top: 50px;
 }
@@ -69,29 +70,32 @@ a:link {
 #contact_descriptions {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin-left: 170px;
 }
 
-#contact_descriptions > i {
-    margin-left: 190px;
+#contact_descriptions > a {
+    color:rgb(89, 140, 187);
+    margin-right: 80px;
+    margin-left: 48px;
 }
+
+#contact_descriptions > .email_desc {
+    margin-left: 140px;
+    margin-right: 0px;
+} 
 
 #contact_links > .gh_img {
-    margin-right: 25px;
+    /* margin-right: 25px; */
     margin-left: 0px;
 }
 
-/* #gh_description {
-    margin-left: 200px;
-} */
-
-
-* {box-sizing: border-box}
 
 /* Style the tab */
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
     background-color: lightskyblue;
+    margin: none;
   }
   
   /* Style the buttons that are used to open the tab content */
