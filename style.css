@@ -44,7 +44,7 @@ a:link {
 #gs_links {
     display: flex;
     flex-direction: column;
-    /* margin-right: 70px; */
+    margin-right: 70px;
 }
 
 #tt_links {
@@ -56,34 +56,128 @@ a:link {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* margin-right: 20px; */
+    margin-right: 20px;
 }
 
 #contact_links > a  {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 150px;
+    margin-left: 70px;
     margin-top: 50px;
 }
 
-#contact_descriptions {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 170px;
+
+.email_tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+  /* Tooltip text */
+.email_tooltip .tooltiptext_email {
+    visibility: hidden;
+    background-color: darkblue;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    width: 280px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -140px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+.email_tooltip:hover .tooltiptext_email {
+    visibility: visible;
 }
 
-#contact_descriptions > a {
-    color:rgb(89, 140, 187);
-    margin-right: 80px;
-    margin-left: 48px;
+.email_tooltip .tooltiptext_email::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: darkblue transparent transparent transparent;
+  }
+
+.li_tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+  /* Tooltip text */
+.li_tooltip .tooltiptext_li {
+    visibility: hidden;
+    background-color: darkblue;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    width: 180px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -90px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+.li_tooltip:hover .tooltiptext_li {
+    visibility: visible;
 }
 
-#contact_descriptions > .email_desc {
-    margin-left: 140px;
-    margin-right: 0px;
-} 
+.li_tooltip .tooltiptext_li::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: darkblue transparent transparent transparent;
+  }
+
+.gh_tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+  /* Tooltip text */
+  .gh_tooltip .tooltiptext_gh {
+    visibility: hidden;
+    background-color: darkblue;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -50px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .gh_tooltip:hover .tooltiptext_gh {
+    visibility: visible;
+  }
+
+  .gh_tooltip .tooltiptext_gh::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: darkblue transparent transparent transparent;
+  }
 
 #contact_links > .gh_img {
     /* margin-right: 25px; */
@@ -105,8 +199,11 @@ a:link {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 14px;
+    padding-left: 15%;
+    padding-right: 14%;
     transition: 0.3s;
+    font-weight: 800;
   }
 
 /* Change background color of buttons on hover */
