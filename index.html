@@ -16,19 +16,23 @@
     <h1>Michael Anderson</h1>
     <h2>Software Developer</h2>
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'defaultOpen')">About Me</button>
+        <button class="tablinks" onclick="openTab(event, 'about_me')" id="defaultOpen">About Me</button>
         <button class="tablinks" onclick="openTab(event, 'project_links')">Projects</button>
         <button class="tablinks" onclick="openTab(event, 'contact')">Contact</button>
     </div>
-<div id="defaultOpen" class="tabcontent">
-    <h4>About Me</h4>
-    <img src="./static/images/me.jpeg" alt="a picture of a middle aged man with long-ish, receding, dark brown hair and thick black glasses" width=75px height=125px>
-    <p>I am a budding developer with a wealth of experience in providing excellent customer service within a team-based environment in varying roles. I have had a lifelong love of technology going all the way back to being 10 years old and doing some simple programming in Basic:</p>
-    <code>10 PRINT "MICHAEL IS COOL!"</code>
-    <br>
-    <code>20 GOTO 10</code>
-    <p>This early interest in coding was rekindled when working with HTML during my last employment. Having then been made redundant I decided to put my efforts into forging a career that I will both enjoy and prosper in.</p>
-    <p>Now, having completed the excellent <a href="https://codeclan.com/courses/professional-software-development/">Professional Software Development</a> course at CodeClan and as a newly trained software developer, I'm excited to combine my past experience with my new skillset to become an effective, enthusiastic and efficient member of Scotland's growing tech sector.</p>
+<div class="tabcontent" id="about_me">
+    <div id="about_me_img">
+        <h4>Hello, I'm Michael...</h4>
+        <img src="./static/images/me.jpeg" alt="a picture of a middle aged man with long-ish, receding, dark brown hair and thick black glasses" width=75px height=125px>
+    </div>
+    <div class="about_me_text">
+        <p>I am a budding developer with a wealth of experience in providing excellent customer service within a team-based environment in varying roles. I have had a lifelong love of technology going all the way back to being 10 years old and doing some simple programming in Basic:</p>
+        <code>10 PRINT "MICHAEL IS COOL!"</code>
+        <br>
+        <code>20 GOTO 10</code>
+        <p>This early interest in coding was rekindled when working with HTML during my last employment. Having then been made redundant I decided to put my efforts into forging a career that I will both enjoy and prosper in.</p>
+        <p>Now, having completed the excellent <a href="https://codeclan.com/courses/professional-software-development/">Professional Software Development</a> course at CodeClan and as a newly trained software developer, I'm excited to combine my past experience with my new skillset to become an effective, enthusiastic and efficient member of Scotland's growing tech sector.</p>
+    </div>
 </div>
     <div id="project_links" class="tabcontent">
         <h4>Please click the links below to view more information on past and current projects.</h4>

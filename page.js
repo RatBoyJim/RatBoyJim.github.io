@@ -4,8 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     tabcontent[i].style.display = "none";
   }
 
-  document.getElementById("defaultOpen").style.display = "block";
-  evt.currentTarget.className += " active";
+  // document.getElementById("about_me_text").style.display = "block";
+  // evt.currentTarget.className += " active";
+
+  document.getElementById("defaultOpen").click();
   
 });
   
@@ -30,5 +32,5 @@ document.addEventListener('DOMContentLoaded', () => {
   evt.currentTarget.className += " active";
 
   // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
+  // document.getElementById("defaultOpen").click();
 };
