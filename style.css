@@ -16,7 +16,7 @@ header {
     font-weight: 700;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    animation: fadeEffect 3s;
+    animation: fadeInEffect 3s;
 }
 
 #forkme_banner > a {
@@ -124,7 +124,7 @@ a:link {
 }
 
 #contact_links:hover {
-    opacity: 75%;
+    opacity: 100%;
 }
 
 #contact_links > a {
@@ -335,13 +335,13 @@ a:link {
   margin: 0px;
   padding: 0px;
   height: 300px;
-  animation: fadeEffect 3s; /* Fading effect takes 1 second */
+  animation: fadeInEffect 3s; /* Fading effect takes 1 second */
 }
 
 
 
 /* Go from zero to full opacity */
-@keyframes fadeEffect {
+@keyframes fadeInEffect {
     from {opacity: 0;}
     to {opacity: 1;}
   }
@@ -349,6 +349,28 @@ a:link {
 @keyframes fadeOutEffect {
   from {opacity: 1;}
   to {opacity: 0;}
+}
+
+@keyframes nudge {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(-75px, 75px);
+  }
+  
+  50% {
+    transform: translate(-150px, 150px);
+  }
+  
+  75% {
+    transform: translate(-225px, 225px);
+  }
+
+  100% {
+    transform: translate(-99999px, -99999px);
+  }
 }
 
 
