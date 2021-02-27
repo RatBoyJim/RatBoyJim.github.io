@@ -34,3 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // Get the element with id="defaultOpen" and click on it
   // document.getElementById("defaultOpen").click();
 };
+
+function linksAppearOnTab() {
+  document.getElementById("forkme_banner").style.animate="fadeOutEffect";
+  document.getElementById("forkme_banner").style.display="none";
+  document.getElementById("contact_links").style.display="flex"; 
+};
+
+function linksReappearOnHeader() {
+  document.getElementById("forkme_banner").style.display="block"; 
+  document.getElementById("contact_links").style.display="none";
+};
