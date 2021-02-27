@@ -16,7 +16,7 @@ header {
     font-weight: 700;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    animation: fadeInEffect 3s;
+    animation: fadeInEffect 1s;
 }
 
 #forkme_banner > a {
@@ -338,6 +338,10 @@ a:link {
   animation: fadeInEffect 3s; /* Fading effect takes 1 second */
 }
 
+.tabcontent > #contact_links {
+  animation: fadeInEffect 5s;
+}
+
 
 
 /* Go from zero to full opacity */
@@ -354,6 +358,7 @@ a:link {
 @keyframes nudge {
   0% {
     transform: translate(0, 0);
+    opacity: 1;
   }
 
   25% {
@@ -369,7 +374,8 @@ a:link {
   }
 
   100% {
-    transform: translate(-99999px, -99999px);
+    transform: translate(-300px, 300px);
+    opacity: 0;
   }
 }
 
