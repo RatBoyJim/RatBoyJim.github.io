@@ -36,23 +36,17 @@ document.addEventListener('DOMContentLoaded', () => {
 };
 
 function linksAppearOnTab() {
-  document.getElementById("forkme_banner").style.animation="nudge 1s forwards linear";
+  document.getElementById("forkme_banner").style.animation="nudge 1s forwards linear alternate";
   // document.getElementById("forkme_banner").style.display="none";
   document.getElementById("contact_links").style.display="flex"; 
 };
 
 function linksReappearOnHeader() {
-  // document.getElementById("forkme_banner").style.animation="nudge 1s reverse backwards linear";
-  document.getElementById("forkme_banner").style.display="block";
-  // document.getElementById("forkme_banner").style.position="fixed";
-  // document.getElementById("forkme_banner").style.top="0";
-  // document.getElementById("forkme_banner").style.right="0px";
-  // document.getElementById("forkme_banner").style.z_index="10";
-  // document.getElementById("forkme_banner").style.padding="10px 10px 10px 0px";
-  // document.getElementById("forkme_banner").style.color="#fff"
-  // document.getElementById("forkme_banner").style.background="rgb(0, 148, 185";
-  // document.getElementById("forkme_banner").style.font_weight="700";
-  // document.getElementById("forkme_banner").style.border_bottom_left_radius="12px";
-  // document.getElementById("forkme_banner").style.border_bottom_right_radius="12px";
-  document.getElementById("contact_links").style.display="none";
+  if (document.getElementById("forkme_banner").style.display == "none"){
+    document.getElementById("forkme_banner").style.display="block";
+    document.getElementById("contact_links").style.display="none";
+  } else {
+    if(document.getElementById("about_me").style.display=="none"){
+      document.getElementById("forkme_banner").style.animation="nudgeBack 1s reverse backwards linear";
+  }}
 };
