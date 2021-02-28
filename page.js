@@ -46,7 +46,7 @@ function linksReappearOnHeader() {
     document.getElementById("forkme_banner").style.display="block";
     document.getElementById("contact_links").style.display="none";
   } else {
-    if(document.getElementById("about_me").style.display=="none"){
+    if(document.getElementById("about_me").style.display=="none" || document.getElementById("about_me").style.display=="block" && document.getElementById("project_links").style.display=="none"){
       document.getElementById("forkme_banner").style.animation="nudgeBack 1s reverse backwards linear";
   }}
 };
