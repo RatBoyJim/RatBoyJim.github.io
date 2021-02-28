@@ -335,11 +335,11 @@ a:link {
   margin: 0px;
   padding: 0px;
   height: 300px;
-  animation: fadeInEffect 3s; /* Fading effect takes 1 second */
+  animation: fadeInEffect 1s;
 }
 
 .tabcontent > #contact_links {
-  animation: fadeInEffect 5s;
+  animation: fadeInEffect 3s ease-in;
 }
 
 

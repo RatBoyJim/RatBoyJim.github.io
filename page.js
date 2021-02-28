@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function linksAppearOnTab() {
   document.getElementById("forkme_banner").style.animation="nudge 1s forwards linear alternate";
-  // document.getElementById("forkme_banner").style.display="none";
   document.getElementById("contact_links").style.display="flex"; 
 };
 
