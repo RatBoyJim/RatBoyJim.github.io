@@ -52,10 +52,6 @@ body {
     color: white;
 }
 
-/* background-attachment: fixed; 
-   background-repeat: no-repeat;
-*/
-
 #about_me {
     margin-left: 20px;
     display: flex;
@@ -72,6 +68,7 @@ body {
 
 .about_me_text {
     margin-right: 800px;
+    padding-bottom: 50px;
 }
 
 a {
