@@ -40,7 +40,9 @@ h2 {
 
 body {
     background-image: url(./static/images/image.png);
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Rubik', sans-serif;
     margin: 0px;
     border: 0px;
@@ -49,6 +51,10 @@ body {
     width: 100%;
     color: white;
 }
+
+/* background-attachment: fixed; 
+   background-repeat: no-repeat;
+*/
 
 #about_me {
     margin-left: 20px;
