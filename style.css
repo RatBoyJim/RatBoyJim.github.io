@@ -94,12 +94,21 @@ a:link {
 }
 
 #gs_image {
-  margin-top: -30px;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 #tt_title {
   font-family: "Press Start 2P", sans-serif;
   font-size: 22pt;
+}
+
+#tt-image {
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 #gs_links {
