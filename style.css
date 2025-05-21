@@ -105,7 +105,7 @@ a:link {
   font-size: 22pt;
 }
 
-#tt-image {
+#tt_image {
     display: flex;
     justify-content: center;
     align-self: center;
